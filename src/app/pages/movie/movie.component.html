@@ -1,0 +1,13 @@
+<div fxLayout="row wrap" class="products-wrapper">
+    <div  *ngFor="let movie of movieList" fxFlex="100" class="col">
+        <mat-card class="product-item">
+            <div fxLayout="row wrap">
+                <div fxFlex="100" fxFlex.gt-xs="60" class="p-2">
+                        {{movie.title}}
+                    <p class="py-1 text-muted lh">{{movie.director}}</p>
+                    <p class="py-1 text-muted lh">{{movie.producer}}</p>                        
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
